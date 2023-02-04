@@ -4,9 +4,9 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 gra=$1
-sudo rm -rf $HOME/.ironfish
 sudo docker stop ironfish
 sudo docker rm ironfish
+sudo rm -rf $HOME/.ironfish
 sudo docker pull ghcr.io/iron-fish/ironfish:latest
 sudo docker run --restart=always --name ironfish -d --tty --cpus=2 --interactive --network host  --volume $HOME/.ironfish:/root/.ironfish ghcr.io/iron-fish/ironfish:latest start
 sleep 10
