@@ -21,6 +21,7 @@ sudo docker exec -it  ironfish ironfish status
 ```
 cd $HOME
 cd ironfish-testnet-3
+sudo apt-get install expect -y
 sudo chmod +x getfaucet.sh
 ./getfaucet.sh <email>
 ```
