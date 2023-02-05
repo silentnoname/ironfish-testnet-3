@@ -38,7 +38,7 @@ sudo docker exec -it  ironfish ironfish  wallet:balance
 #### first time
 ```
 gra=<graffiti>
-sudo docker exec -it ironfish ironfish wallet:mint --metadata="" --name=$gra --amount=100 --fee=0.00000001 --confirm
+sudo docker exec -it ironfish ironfish wallet:mint --metadata="see more here" --name=$gra --amount=100 --fee=0.00000001 --confirm
 ```
 wait around 5 min
 
