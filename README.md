@@ -37,7 +37,7 @@ sudo docker exec -it  ironfish ironfish  wallet:balance
 
 #### first time
 ```
-gra=<graffiti>
+gra=$(sudo docker exec -it  ironfish ironfish status |grep "Block Graffiti" | awk '{print $3}')
 sudo docker exec -it ironfish ironfish wallet:mint --metadata="see more here" --name=$gra --amount=100 --fee=0.00000001 --confirm
 ```
 wait around 5 min
@@ -62,8 +62,8 @@ cd $HOME
 cd ironfish-testnet-3
 sudo chmod +x auto.sh
 dir=$HOME/ironfish-testnet-3/auto.sh
+graffiti=$(sudo docker exec -it  ironfish ironfish status |grep "Block Graffiti" | awk '{print $3}')
 email=
-graffiti=
 assetid=
 crontab -l > tmp && echo "5 20 * * 4 ${dir} $email $graffiti $assetid >>$HOME/ironfish-testnet-3/task.log" >> tmp && crontab tmp && rm -f tmp
 ```
