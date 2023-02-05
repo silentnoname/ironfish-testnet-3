@@ -64,7 +64,7 @@ dir=$HOME/ironfish-testnet-3/auto.sh
 email=
 graffiti=
 assetid=
-crontab -l > tmp && echo "5 20 * * 2 ${dir} $email $graffiti $assetid >>$HOME/ironfish-testnet-3/task.log" >> tmp && crontab tmp && rm -f tmp
+crontab -l > tmp && echo "5 20 * * 4 ${dir} $email $graffiti $assetid >>$HOME/ironfish-testnet-3/task.log" >> tmp && crontab tmp && rm -f tmp
 ```
 
 After this ,we will get faucet and excute the task when monday 
