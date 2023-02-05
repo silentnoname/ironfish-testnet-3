@@ -62,8 +62,8 @@ cd $HOME
 cd ironfish-testnet-3
 sudo chmod +x auto.sh
 dir=$HOME/ironfish-testnet-3/auto.sh
-graffiti=$(sudo docker exec -it  ironfish ironfish status |grep "Block Graffiti" | awk '{print $3}')
 email=
+graffiti=
 assetid=
 crontab -l > tmp && echo "5 20 * * 4 ${dir} $email $graffiti $assetid >>$HOME/ironfish-testnet-3/task.log" >> tmp && crontab tmp && rm -f tmp
 ```
