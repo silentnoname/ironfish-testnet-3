@@ -59,7 +59,7 @@ sudo chmod +x task.sh
 ```
 cd $HOME
 cd ironfish-testnet-3
-sudo chmod +x task.sh
+sudo chmod +x auto.sh
 dir=$HOME/ironfish-testnet-3/auto.sh
 email=
 graffiti=
