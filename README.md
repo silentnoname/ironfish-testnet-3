@@ -17,6 +17,19 @@ sudo chmod +x upgrade.sh
 
 ```
 
+### Setup Ceremony
+```
+cd $HOME
+cd ironfish-testnet-3
+sudo chmod +x ceremony.sh
+screen -S ironfish_ceremony
+./ceremony.sh
+```
+
+**If you want to associate a name with this contribution , run `./ceremony.sh <Your Name>` **  
+
+The log will be stored in $HOME/ceremony_output.log
+
 
 ## check node status
 ```
