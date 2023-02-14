@@ -8,6 +8,15 @@ cd ironfish-testnet-3
 sudo chmod +x startnode.sh 
 ./startnode.sh  <graffiti>
 ```
+## Upgrade to latest version
+```
+cd $HOME
+cd ironfish-testnet-3
+sudo chmod +x upgrade.sh
+./upgrade.sh
+
+```
+
 
 ## check node status
 ```
