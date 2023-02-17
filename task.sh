@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ $# -ne 2 ]; then
     echo "Please input your graffiti, asset ID"
     exit 1

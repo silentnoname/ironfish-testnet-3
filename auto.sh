@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ $# -ne 3 ]; then
     echo "Please input your email , graffiti, asset ID"
     exit 1
@@ -10,4 +10,4 @@ id=$3
 sudo chmod +x $HOME/ironfish-testnet-3/getfaucet.sh
 sudo $HOME/ironfish-testnet-3/getfaucet.sh $email
 sleep 7200
-bash $HOME/ironfish-testnet-3/task.sh $gra $id
+sudo $HOME/ironfish-testnet-3/task.sh $gra $id
